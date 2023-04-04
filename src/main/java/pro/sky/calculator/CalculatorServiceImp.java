@@ -7,13 +7,13 @@ public class CalculatorServiceImp implements CalculatorService {
     public String hello() {
         return "Добро пожаловать в калькулятор";
     }
-    //***************************************************************************
+    //*************************************************************************
     //
     //Если какой-то из двух параметров (или оба) не поданы, нужно вернуть ошибку.
     //
     //Не стал ломать голову, т.к. итак выдается ошибка без передачи хотя бы одного из параметров
     //
-    //****************************************************************************
+    //**************************************************************************
     public String plus(int num1, int num2) {
         int sum = num1 + num2;
         String num1toString = String.valueOf(num1);
@@ -48,5 +48,6 @@ public class CalculatorServiceImp implements CalculatorService {
         String num1DivideNum2 = String.valueOf(divide);
         return num1toString + " / " + num2toString + " = " + num1DivideNum2;
     }
+
 }
 

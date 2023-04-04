@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CalculatorController {
     public final CalculatorServiceImp calculatorServiceImp;
-
     private CalculatorController(CalculatorServiceImp calculatorServiceImp) {
         this.calculatorServiceImp = calculatorServiceImp;
     }
@@ -31,4 +30,5 @@ public class CalculatorController {
     public String divide(@RequestParam("num1")  int num1, @RequestParam("num2") int num2){
         return calculatorServiceImp.divide(num1,num2);
     }
+
 }
