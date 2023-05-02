@@ -26,7 +26,7 @@ class CalculatorServiceImParametrizedTest {
     public static Stream<Arguments> provideMethodPlusParamsForTests() {
         return Stream.of(
                 Arguments.of(-1, 2, "-1 + 2 = 1"),
-                Arguments.of(-44, -44, "-44 + -44 = -88"),
+                Arguments.of(-44, -44, "-44 + (-44) = -88"),
                 Arguments.of(0, 0, "0 + 0 = 0")
         );
     }
